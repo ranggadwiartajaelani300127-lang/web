@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 22nd Birthday, Nadia 💗</title>
+<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Quicksand:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background layers -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+  </div>
+  <div id="hearts-field" aria-hidden="true"></div>
+
+  <!-- Music control -->
+  <audio id="bg-music" src="music/Takkan%20Terganti.mp3" loop></audio>
+  <button id="music-toggle" class="music-btn" aria-label="Putar musik">
+    <span class="disc">
+      <img src="images/logo.png" alt="">
+    </span>
+    <span class="music-label">Putar Lagu</span>
+  </button>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <p class="eyebrow">— untuk seseorang yang paling berarti —</p>
+    <h1 class="hero-title">
+      <span class="line">Selamat Ulang Tahun</span>
+      <span class="line name">Nadia</span>
+    </h1>
+    <div class="age-badge">
+      <span class="age-number">22</span>
+      <span class="age-word">Tahun</span>
+    </div>
+    <p class="hero-sub">Setiap tahun bertambah, semakin banyak alasan untuk mencintaimu lebih dari kemarin.</p>
+
+    <button class="envelope-cta" id="open-envelope">
+      <span class="envelope">
+        <span class="env-back"></span>
+        <span class="env-flap"></span>
+        <span class="env-heart">💌</span>
+      </span>
+      <span class="envelope-text">Buka Surat Cinta Untukmu</span>
+    </button>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span></span> gulir ke bawah
+    </div>
+  </section>
+
+  <!-- ================= LETTER MODAL ================= -->
+  <div class="modal-overlay" id="letter-modal">
+    <div class="letter-card">
+      <button class="close-btn" id="close-letter" aria-label="Tutup">✕</button>
+      <p class="letter-kicker">Untuk Nadia, di hari spesialnya</p>
+      <p class="letter-body" id="letter-text"></p>
+      <p class="letter-sign">— dengan sayang, aku 🩷</p>
+    </div>
+  </div>
+
+  <!-- ================= CAKE / WISH SECTION ================= -->
+  <section class="cake-section" id="cake-section">
+    <h2 class="section-title">Ayo Buat Permintaan 🎂</h2>
+    <p class="section-sub">Tiup lilinnya, lalu ucapkan harapanmu dalam hati.</p>
+
+    <div class="cake-wrap">
+      <div class="candles" id="candles">
+        <div class="candle"><span class="flame"></span></div>
+        <div class="candle tall"><span class="flame"></span></div>
+        <div class="candle"><span class="flame"></span></div>
+      </div>
+      <div class="cake">
+        <div class="cake-top">
+          <span class="drip d1"></span><span class="drip d2"></span><span class="drip d3"></span>
+          <span class="drip d4"></span><span class="drip d5"></span>
+        </div>
+        <div class="cake-layer layer-1"></div>
+        <div class="cake-layer layer-2"></div>
+        <div class="cake-plate"></div>
+      </div>
+    </div>
+
+    <button class="blow-btn" id="blow-btn">Tiup Lilinnya 💨</button>
+    <p class="wish-made" id="wish-made">Yeay! Semoga semua harapan Nadia tahun ini terwujud 🤍</p>
+  </section>
+
+  <!-- ================= MESSAGE / GREETING ================= -->
+  <section class="message-section" id="message-section">
+    <div class="quote-mark">“</div>
+    <p class="typed-message" id="typed-message"></p>
+    <span class="typed-cursor" id="typed-cursor">|</span>
+  </section>
+
+  <!-- ================= GALLERY ================= -->
+  <section class="gallery-section" id="gallery-section">
+    <h2 class="section-title">Kenangan Kita 📸</h2>
+    <p class="section-sub">Beberapa momen yang selalu bikin aku senyum sendiri.</p>
+    <div class="gallery">
+      <figure class="polaroid p1">
+        <img src="images/c1.jpeg" alt="Kenangan bersama Nadia 1">
+        <figcaption>awal cerita kita</figcaption>
+      </figure>
+      <figure class="polaroid p2">
+        <img src="images/c2.jpeg" alt="Kenangan bersama Nadia 2">
+        <figcaption>senyum favoritku</figcaption>
+      </figure>
+      <figure class="polaroid p3">
+        <img src="images/c3.jpeg" alt="Kenangan bersama Nadia 3">
+        <figcaption>hari yang seru</figcaption>
+      </figure>
+      <figure class="polaroid p4">
+        <img src="images/c4.jpeg" alt="Kenangan bersama Nadia 4">
+        <figcaption>momen konyol kita</figcaption>
+      </figure>
+      <figure class="polaroid p5">
+        <img src="images/c5.jpeg" alt="Kenangan bersama Nadia 5">
+        <figcaption>liburan tak terlupakan</figcaption>
+      </figure>
+      <figure class="polaroid p6">
+        <img src="images/c6.jpeg" alt="Kenangan bersama Nadia 6">
+        <figcaption>selalu bikin rindu</figcaption>
+      </figure>
+      <figure class="polaroid p7">
+        <img src="images/c7.jpeg" alt="Kenangan bersama Nadia 7">
+        <figcaption>kenangan paling hangat</figcaption>
+      </figure>
+      <figure class="polaroid p8">
+        <img src="images/c8.jpeg" alt="Kenangan bersama Nadia 8">
+        <figcaption>momen paling berharga</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <img class="footer-logo" src="images/logo.png" alt="Logo Nadia">
+    <p>Happy 22nd Birthday, Nadia 🎉</p>
+    <p class="footer-note">dibuat dengan sepenuh hati, khusus untukmu.</p>
+  </footer>
+
+  <!-- Floating confetti canvas layer -->
+  <div id="confetti-layer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
